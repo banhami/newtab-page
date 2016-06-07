@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div id="time">
+		<script type="text/javascript">
+		var currentTime = new Date()
+		var hours = currentTime.getHours()
+		var minutes = currentTime.getMinutes()
+
+		if (minutes < 10)
+			minutes = "0" + minutes
+		var suffix = "AM";
+		if (hours >= 12) {
+			suffix = "PM";
+			hours = hours - 12;
+		}
+		if (hours == 0) {
+			hours = 12;
+		}
+		document.write("<b>" + hours + ":" + minutes + " " + suffix + "</b>")
+		</script>
+		<br>
+		<script type="text/javascript">
+		var currentDate = new Date()
+		var day = currentDate.getDate()
+		var month = currentDate.getMonth() + 1
+		var year = currentDate.getFullYear()
+		document.write("<b>" + day + "/" + month + "/" + year + "</b>")
+		</script>
+	</div>
+	<div class="books2">
+		<a href="https://www.facebook.com/">facebook</a><br>	
+		<a href="http://messenger.com/">messenger</a><br>
+		<a href="https://www.reddit.com/r/random/">reddit</a><br>
+		<a href="https://www.google.com/webhp?hl=en">google</a><br>
+		<a href="https://www.youtube.com/">youtube</a><br>
+		<a href="http://gmail.com/">gmail</a><br>
+		<a href="http://cakepotato.blogspot.com/">cakepotato</a><br>
+		<a href="https://github.com/">github</a><br>
+	</div>
+	<div class="books">
+		<a href="https://my.uw.edu/" accesskey="1">myUW</a><br>
+		<a href="https://myplan.uw.edu/" accesskey="2">myPlan</a><br>
+		<a href="https://canvas.uw.edu/" accesskey="3">canvas</a><br>
+		<a href="http://www.math.washington.edu/~ebekyel/Math308/">math 308</a><br>
+		<a href="https://www.webassign.net/washington/login.html">webassign</a><br>
+		<a href="https://depts.washington.edu/uwphyttl/">tutorial</a><br>
+		<a href="https://www.flipitphysics.com/">smartphysics</a><br>
+		<a href="https://www.reddit.com/r/AskReddit/comments/2b0yf8/good_students_how_do_you_go_about_getting_good/">study habits</a><br>
+	</div>
+	<img class="line" src="line.png">
+</body>
+</html>
